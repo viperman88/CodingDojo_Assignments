@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+
+        <script type="text/javascript">
+        "use strict";
+
+        function testYourLuck(){
+            var myMoney = 1000;
+            var bet = 10;
+
+            while(myMoney >= bet){
+            var myNum = Math.floor(Math.random()*101);
+            var chance = Math.floor(Math.random()*101);
+            var earnings = Math.floor(Math.random()*50)+51;
+
+                if(chance == myNum && myMoney >= bet){
+                    myMoney = myMoney + earnings - bet;
+                    console.log("WINNER WINNER! You won " + earnings + " quarters! Your number was " + myNum + " the machine's number was " + chance + "! You now have " + myMoney + " quarters, congratulations!")
+                }
+                else if(chance != myNum && myMoney >= bet){
+                    myMoney = myMoney - bet;
+                    console.log("You lost! " + bet + " quarters! Your number was " + myNum + " the machine's number was " + chance + "! You now have " + myMoney + " quarters!!")
+                }
+
+            }
+            console.log("You dont have enough money to play! You have " + myMoney + " quarters left, and you need " + bet + " to play!!");
+        }
+        testYourLuck()
+
+        </script>
+
+</html>
