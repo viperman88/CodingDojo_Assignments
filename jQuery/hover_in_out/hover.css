@@ -1,0 +1,13 @@
+
+.wrapper{
+    height: 220px;
+    width: 970px;
+    background-color: maroon;
+}
+
+img{
+    height: 200px;
+    width: 24%;
+    margin-left: 5px;
+    margin-top: 10px;
+}

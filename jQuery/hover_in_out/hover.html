@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hover</title>
+        <meta name="hover" content="Today we learn to hover!">
+        <link rel="stylesheet" href="hover.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('img').hover(function() {
+                console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+            });
+
+            var imgSwap = function () {
+                var $this = $(this);
+                var newImg = $this.data('alt-src');
+                $this.data('alt-src', $this.attr('src'));
+                $this.attr('src', newImg);
+            }
+
+                $(function() {
+                    $('img[data-alt-src]').each(function() {
+                        new Image().src = $(this).data('alt-src');
+                    }).hover(imgSwap, imgSwap);
+                });
+        });
+
+
+        </script>
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+            <img id='one' src='https://s-media-cache-ak0.pinimg.com/originals/88/3b/16/883b1699eae14c151bbc125afdba6a8c.jpg' data-alt-src='http://rcysl.com/wp-content/uploads/2016/12/Amazing-Nature-Pictures-Great-Collection.jpg'/>
+            <img id='two'src='http://www.hdwallpaperspulse.com/wp-content/uploads/2016/12/11/awesome-art-tree-image.jpg' data-alt-src='http://prettycoolpics.com/wp-content/uploads/2013/08/amazing-nature-87-1280x1024.jpg'/>
+            <img id='three'src='http://cdn.wallpapersafari.com/10/52/hn3EOS.jpg' data-alt-src='https://www.funnypica.com/wp-content/uploads/2012/07/Amazing-Nature-47.jpg'/>
+            <img id='four'src='https://i.ytimg.com/vi/Bokdxi-bbH4/maxresdefault.jpg' data-alt-src='http://www.designyourway.net/diverse/superbnat/27322623878.jpg'/>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,53 @@
+table{
+    border: 1px solid black;
+}
+
+    th{
+        height: 20px;
+        width: 162px;
+        text-align: center;
+    }
+
+    td{
+        text-align: center;
+    }
+
+
+h1{
+    height: 40px;
+    width: 300px;
+    border-bottom: 2px solid black;
+}
+
+form{
+    width: 300px;
+}
+
+    form input{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .first-name{
+        margin-left: 91px;
+        margin-bottom: 15px;
+    }
+
+    .last-name{
+        margin-left: 93px;
+        margin-bottom: 15px;
+    }
+
+    .email{
+        margin-left: 68px;
+        margin-bottom: 15px;
+    }
+
+    .contact{
+        margin-left: 101px;
+        margin-bottom: 40px;
+    }
+
+.submit{
+    margin-left: 238px;
+}

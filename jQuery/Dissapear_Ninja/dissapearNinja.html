@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dissapearing Images</title>
+        <meta name="dissapearing" content="Watch as these images dissapear before your eyes!">
+        <link rel="stylesheet" href="dissapearNinja.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $('img').click(function(){
+                $(this).hide();
+            });
+
+                $('button').click(function(){
+                $("img").show();
+            });
+
+            });
+
+        </script>
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <h1>jQuery Assignment for the Dojo, Dissapearing Images!!!</h1>
+
+            <img src="http://www.jaitoutcompris.com/img/encyclo/lion.jpg" alt="lion">
+            <img src="http://www.weearthlings.net/images/animalsimages/Elephant-bs4253825.jpg" alt="elephant">
+            <img src="http://animals.sandiegozoo.org/sites/default/files/2016-10/animals_hero_acacia.jpg" alt="giraffe">
+            <img src="https://zellox.com/wp-content/uploads/2016/02/animals-of-africa.jpg" alt="zebra">
+            <img src="https://www.drivesouthafrica.co.za/images/uploads/The-most-endangered-African-animals.jpg" alt="rhino">
+            <img src="http://buzzsouthafrica.com/wp-content/uploads/buffalo.jpg" alt="buffalo">
+            <img src="http://d3gl10e3tfcx91.cloudfront.net/static/widgets/medium/VG-AfricanAnimals-Baboon.jpg" alt="baboon">
+            <img src="http://travelphotos.picturetheplanet.com/Africa/South-Africa/Wildlife/i-6PsTfv6/0/XL/Wildlife-South-Africa-17-XL.jpg" alt="hippo">
+
+            <button name="button">RESTORE</button>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Functions</title>
+        <meta name="jQuery" content="jQuery functions assignment.">
+        <link rel="stylesheet" href="jQuery.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+                $( "#toggle" ).click(function(){
+                    $("header img").toggle("slow");
+                });
+
+                $("#before").click(function(){
+                    $("header p:first").before("<p>This is just the start of what is possible with jQuery! I'm new so my skills are weak!</p>");
+                });
+
+                $("#after").click(function(){
+                    $("header p:last").after("<p>Ahh yeah! My skills are becoming like super hero! I see no limit to the futures ahead!</p>");
+                });
+
+                $("#add").click(function(){
+                    $("section p").addClass("color");
+                })
+
+                $("#remove").click(function(){
+                    $("section p").removeClass("color");
+                })
+
+                $("article button").click(function(){
+                    $( "article img" ).slideToggle("slow");
+                });
+
+                $("#fadeOut").click(function() {
+                    $("main p").fadeOut(3000);
+                });
+
+                $("#fadeIn").click(function() {
+                    $("main p").fadeIn(3000);
+                });
+
+                $("#append").click(function(){
+                    $("aside p:last").append("<p>this is some tricky stuff! Slowley figuring it out!</p>");
+                });
+
+                $("#hide").click(function() {
+                    $("aside p:first").hide("slow");
+                });
+
+                $("#show").click(function(){
+                    $("aside p:first").show("slow");
+                });
+
+                $("#slideUp").click(function(){
+                    $("footer img").slideUp("slow");
+                });
+
+                $("#slideDown").click(function(){
+                    $("footer img").slideDown("slow");
+                });
+
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+            <header>
+                <h1>jQuery Magic</h1>
+                <button id="toggle">Toggle</button>
+                <button id="before">Before</button>
+                <button id="after">After</button>
+
+                <article id="grow_text">
+                    <p>Something will go here, but I'm not quite sure yet what it will be!! I gues you will have to see!!</p>
+                </article>
+
+                <img src="./banner_img.png" alt="banner">
+            </header>
+
+            <main>
+                <h2>Fade</h2>
+                <button id="fadeOut">Fade Out</button>
+                <button id="fadeIn">Fade In</button>
+                <p>Maecenas vitae velit nec eros ultricies gravida. Aliquam tincidunt varius eleifend. Integer fermentum hendrerit elit, ut placerat nulla aliquam ut. Cras fermentum nisl id mi vestibulum efficitur. In ut mauris ac eros ornare viverra. Aenean vehicula ultrices tincidunt. Aliquam a ex at quam consequat interdum vel eget sapien.</p>
+            </main>
+
+            <section>
+                <h2>Add Class</h2>
+                <button id="add">Add Class</button>
+                <button id="remove">Remove</button>
+                <p>Cick the button to add class red to this paragraph. Pretty cool huh? This stuff works some cool magic! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec consectetur nulla, ac malesuada felis. Proin vestibulum diam eu nisl dapibus, eget euismod orci venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec consectetur nulla, ac malesuada felis. Proin vestibulum diam eu nisl dapibus, eget euismod orci venenatis.</p>
+            </section>
+
+            <article>
+                <h2>Add Style</h2>
+                <button type="button">Add Style</button>
+                <p>Click the button to slidetoggle a hidden image.</p>
+                <img src="./content_img1.png" alt="img1">
+            </article>
+
+            <aside>
+                <h2>Append</h2>
+                <button id="append">Append</button>
+                <button id="hide">Hide Me</button>
+                <button id="show">Show Me</button>
+                <p>Click the hide button and watch something dissapear! Click the show me button and magically it's back!</p>
+                <p>Click the append button to add a new paragraph.</p>
+            </aside>
+
+            <footer>
+                <h2>Slide-Up Slide-Down</h2>
+                <button id="slideUp">Slide Up</button>
+                <button id="slideDown">Slide Down</button>
+                <button id="">soon</button>
+                <p>Something will go here, but I'm not quite sure yet what it will be!!</p>
+                <img src="./banner_img.png" alt="banner">
+            </footer>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Slice Images</title>
+        <meta name="slice" content="Today we are going to slice an image!">
+        <link rel="stylesheet" href="slice.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            $('img').click(function() {
+                console.log('data-alt-src value is', $(this).attr('data-alt-src'));
+            });
+
+            var imgSwap = function () {
+                var $this = $(this);
+                var newImg = $this.data('alt-src');
+                $this.data('alt-src', $this.attr('src'));
+                $this.attr('src', newImg);
+            }
+
+                $(function() {
+                    $('img[data-alt-src]').each(function() {
+                    new Image().src = $(this).data('alt-src');
+                    }).click(imgSwap, imgSwap);
+                });
+        });
+
+        </script>
+    </head>
+
+    <body>
+
+        <img id='one' src='./ninja0.png' data-alt-src='./cat0.png'/>
+        <img id='two'src='./ninja1.png' data-alt-src='./cat1.png'/>
+        <img id='three'src='./ninja2.png' data-alt-src='./cat2.png'/>
+        <img id='four'src='./ninja3.png' data-alt-src='./cat3.png'/>
+        <img id='five'src='./ninja4.png' data-alt-src='./cat4.png'/>
+
+    </body>
+</html>
