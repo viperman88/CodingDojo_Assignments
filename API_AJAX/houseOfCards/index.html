@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>House of Cards</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+        function styleDynamic(){
+            $("#info").css({"border":"3px solid black","width":"75%","margin-left":"20px"})
+            $("h2").css({"font-size":"32pt","text-align":"center"})
+            $("p").css({"font-size":"22pt","margin-left":"20px"})
+        }
+
+        $(document).ready(function(){
+
+            $("img").click(function(){
+                var id = $(this).attr("id");
+                var info = "https://www.anapioficeandfire.com/api/houses/" + id;
+
+                $.get(info, function(data){
+                    var house = "";
+                    house += "<h2>House Details</h2>"
+                    house += "<p>Names: " + data.name + "</p>";
+                    //console.log(house);
+                    var word = "";
+                    word += "<p>Words:  " + data.words + "</p>";
+                    //console.log(name);
+                    var title = "";
+                    title +="<p>Titles: " + data.titles + "</p>";
+                    //console.log(title);
+                    $("#info").html(house + word + title);
+                    styleDynamic();
+                },"json");
+
+            });
+
+        });
+
+        </script>
+
+        <style>
+
+        img{
+            height: 300px;
+            width: 300px;
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="images">
+            <img id="17" src="./images/baratheon.png" alt="">
+            <img id="229" src="./images/lannister.jpg" alt="">
+            <img id="362" src="./images/stark.jpg" alt="">
+            <img id="378" src="./images/targaryen.jpg" alt="">
+        </div>
+
+        <div id="info">
+
+        </div>
+
+    </body>
+</html>

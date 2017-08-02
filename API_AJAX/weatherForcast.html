@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Weather App!</title>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+
+        function styleDynamic(){
+            $("h2").css({"font-size":"32pt","margin-left":"20px"});
+            $("p").css({"font-size":"22pt","margin-left":"20px"});
+        }
+
+        $(document).ready(function() {
+            $('form').submit(function() {
+                var name = $("input").val();
+                //var name = $(this).serialize();
+                console.log(name);
+                var city_temp = "http://api.openweathermap.org/data/2.5/weather?q=" + name + "&units=imperial&APPID=6b9b2b01531991afcc17626006342691";
+                styleDynamic();
+
+                $.get(city_temp, function(res) {
+                    var city = "";
+                    city += "<h2>" + name + "</h2>";
+                    var results = "";
+                    results += "<p>Temperature: " + res.main.temp + "</p>";
+                    $("#weather").html(city + results);
+                    styleDynamic();
+                }, 'json');
+                // don't forget to return false so the page doesn't refresh
+                return false;
+            });
+        });
+
+        </script>
+
+        <style>
+
+            form{
+                margin-left: 20px;
+            }
+            input{
+                font-size: 18pt;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <form class="input" action="index.html" method="post">
+
+            <input type="text" name="city_name" placeholder="Enter city name">
+            <input type="submit" value="Search Weather">
+            <!--<button type="submit" name="submit">Search Weather</button>-->
+
+        </form>
+
+        <div id="weather">
+
+        </div>
+
+    </body>
+</html>
