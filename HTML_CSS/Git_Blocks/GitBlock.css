@@ -1,0 +1,124 @@
+.wrapper{
+  width: 970px;
+  background-color: silver;
+}
+
+  header{
+    height: 70px;
+    width: 950px;
+    background-color: #46CED1;
+    margin: 10px;
+  }
+        header img{
+        background-color: #46CED1;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+        }
+        header h1{
+          display: inline-block;
+          margin: 21.4px 100px 21.4px 15px;
+        }
+        header nav{
+          display: inline-block;
+        }
+        header a{
+          color: white;
+          margin-right: 20px;
+        }
+
+    .wrap-main{
+      background-color: #F5EE84;
+      height: 580px;
+      width: 950px;
+      margin-left: 10px;
+      padding-top: 10px;
+    }
+    aside{
+      height: 560px;
+      width: 210px;
+      margin-left: 10px;
+      margin-right: 0px;
+      display: inline-block;
+      vertical-align: top;
+      background-color: #F5EE84;
+    }
+        #side{
+            height: 580;
+            width: 190px;
+            padding: 10px;
+            margin-left: 8px;
+            margin-top: 10px;
+        }
+
+    main{
+      height: 560px;
+      width: 700px;
+      margin-left: 10px;
+      display: inline-block;
+      padding-top: 10px;
+      background-color: #F5EE84;
+    }
+    article{
+      background-color: #1D4147;
+      color: white;
+      vertical-align: top;
+    }
+        article p{
+            font-size: 11pt;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        article a{
+            color: #46CED1;
+        }
+        #row1{
+            height: 170px;
+            width: 685px;
+            margin-bottom: 15px;
+        }
+
+        #row1 article{
+            height: 160px;
+            width: 210px;
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        #row2{
+            height: 170px;
+            width: 685px;
+            margin-bottom: 15px;
+        }
+
+        #row2 article{
+            height: 160px;
+            width: 325px;
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+        #row3{
+            height: 170px;
+            width: 685px;
+        }
+
+        #row3 article{
+            height: 160px;
+            width: 670px;
+            display: inline-block;
+            margin-left: 15px;
+        }
+
+  footer{
+    height: 50px;
+    width: 950px;
+    background-color: #46CED1;
+    margin: 10px;
+    padding-top: 10px;
+  }
+        footer p{
+          margin-left: 250px;
+        }

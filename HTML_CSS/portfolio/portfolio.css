@@ -1,0 +1,167 @@
+body{
+  background-color: #CCC9D6;
+  height: 1000px;
+  width: 970px;
+}
+.header{
+  height: 60px;
+}
+  .header h1{
+    display: inline-block;
+    font-size: 32pt;
+    font: bold;
+    margin: 0px 380px 0px 15px;
+  }
+  .header p{
+    display: inline-block;
+    font-size: 18pt;
+    font: bold;
+    margin-bottom: 0px;
+  }
+.wrapper{
+  background: radial-gradient(#AD7AAA, #3B1125);
+  height: 940px;
+  width: 970px;
+}
+  .wrapper a{
+    box-shadow: 5px 5px 2px #888888;
+    background-color: #529962;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px 100px 95px;
+    padding: 5px;
+  }
+.first{
+  height: 300px;
+  width: 970px;
+  display: block;
+}
+.picture{
+  height: 270px;
+  width: 430px;
+  border: 4px solid silver;
+  display: inline-block;
+  margin: 20px 45px 0px 15px;
+}
+  .picture img{
+    height: 270px;
+    width: 430px;
+  }
+aside{
+  height: 275px;
+  width: 430px;
+  background: radial-gradient(silver, white);
+  vertical-align: top;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  margin-left: 15px;
+}
+  aside p{
+    margin-right: 0px;
+    margin-left: 10px;
+    width: 400px;
+  }
+.second{
+  height: 600px;
+  width: 970px;
+}
+.mode{
+  height: 600px;
+  width: 290px;
+  border: 4px solid silver;
+  display: inline-block;
+  margin: 15px;
+  background: radial-gradient(silver, white);
+}
+  .mode img{
+    height: 150px;
+    width: 290px;
+  }
+.tech1{
+  height: 120px;
+  width: 290px;
+  padding: 10px;
+}
+  .tech1 img{
+    height: 50px;
+    width: 50px;
+  }
+.family{
+  height: 600px;
+  width: 290px;
+  border: 4px solid silver;
+  display: inline-block;
+  margin: 15px 0px 15px 0px;
+  background: radial-gradient(silver, white);
+}
+  .family img{
+    height: 150px;
+    width: 290px;
+  }
+.tech2{
+  height: 120px;
+  width: 290px;
+  padding: 10px;
+}
+  .tech2 img{
+    height: 50px;
+    width: 50px;
+  }
+.five{
+  height: 600px;
+  width: 290px;
+  border: 4px solid silver;
+  display: inline-block;
+  margin: 15px;
+  background: radial-gradient(silver, white);
+}
+  .five img{
+    height: 150px;
+    width: 290px;
+  }
+.tech3{
+  height: 120px;
+  width: 290px;
+  padding: 10px;
+}
+  .tech3 img{
+    height: 50px;
+    width: 50px;
+  }
+h3{
+  height: 30px;
+  width: 290;
+  background: radial-gradient(grey, silver);
+  padding: 10px 0px 0px 10px;
+  margin: 3px;
+  vertical-align: top;
+}
+.footer{
+  height: 30px;
+  width: 970px;
+}
+  .footer p{
+    width: 250px;
+    height: 30px;
+    margin: 10px 0px 0px 370px;
+  }
+  .footer a{
+    text-decoration: none;
+  }
+.footer2{
+  height: 30px;
+  width: 970px;
+}
+  .footer2 table img{
+    height: 15px;
+    width: 15px;
+    margin: 0px 5px 0px 0px;
+  }
+  .footer2 p{
+    margin-top: 0px;
+  }
+table{
+  margin-left: 300px;
+}

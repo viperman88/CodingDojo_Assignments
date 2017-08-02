@@ -1,0 +1,151 @@
+body{
+  width: 970px;
+}
+.wrapper{
+  height: 500px;
+  width: 970px;
+  background: radial-gradient(#195099, #16488A);
+}
+  .wrapper p{
+    margin: 0px;
+    color: white;
+  }
+  .wrapper a{
+    color: yellow;
+  }
+  .wrapper img{
+    display: inline-block;
+    height: 100px;
+    width: 300px;
+    margin-left: 20px;
+  }
+  .form{
+    height: 60px;
+    width: 260px;
+    background-color: #3A4544;
+    box-shadow: 3px 3px 3px black;
+    margin-left: 330px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .search{
+    display: inline-block;
+    padding-top: 13px;
+    padding-left: 25px;
+  }
+#search{
+    height: 30px;
+    width: 160px;
+    margin: 0px;
+    display: inline-block;
+    border-radius: 5px;
+}
+#submit{
+    height: 40px;
+    width: 40px;
+    margin: 0px;
+    display: inline-block;
+}
+nav{
+  height: 40px;
+  width: 800px;
+  border: 2px solid black;
+  background-color: #2375F0;
+  padding-top: 5px;
+  margin-left: 80px;
+  border-radius: 10px;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  height: 30px;
+  width: 100px;
+  font-size: 18pt;
+  margin-left: 30px;
+}
+aside{
+  display: inline-block;
+  color: yellow;
+  height: 185px;
+  width: 250px;
+  margin-left: 70px;
+}
+  aside ul{
+    margin-top: 30px;
+  }
+  aside ul li{
+    width: 150px;
+    text-align: center;
+    font-size: 14pt;
+    margin-bottom: 5px;
+  }
+  aside a{
+    color: white;
+  }
+section{
+  width: 530px;
+  height: 250px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 40px;
+}
+  section p{
+    color: white;
+    font-size: 12pt;
+  }
+  section ul{
+    list-style-type: none;
+    padding: 0px;
+  }
+  section ul li{
+    color: yellow;
+    font-size: 14pt;
+    text-align: center;
+    margin-top: 5px;
+  }
+.started{
+  border-top: 4px solid blue;
+  height: 250px;
+  width: 320px;
+  vertical-align: top;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+  .started a{
+    text-decoration: none;
+  }
+  .started h3, p, li{
+    text-align: center;
+  }
+.apps{
+  border-top: 4px solid blue;
+  height: 250px;
+  width: 320px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 80px;
+}
+  .apps a{
+    text-decoration: none;
+  }
+  .apps h3, p, li{
+    text-align: center;
+  }
+footer{
+  height: 100px;
+  width: 880px;
+  background: radial-gradient(#195099, #16488A);
+  padding-left: 100px;
+  padding-top: 20px;
+}
+  footer a{
+    color: white;
+    text-decoration: none;
+    margin-left: 60px;
+  }
+  footer p{
+    width: 760px;
+  }

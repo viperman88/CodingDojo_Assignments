@@ -1,0 +1,179 @@
+.wrapper{
+  width: 970px;
+  background-color: #EDF3E5;
+}
+span{
+  color: blue;
+}
+.header{
+}
+  .header img{
+    height: 60px;
+    width: 60px;
+    margin-bottom: -10px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  .header h1{
+    display: inline-block;
+    font-size: 28pt;
+    margin: 0px;
+  }
+  .header p{
+    height: 40px;
+    width: 970px;
+    background-color: blue;
+    margin: 0px;
+    color: white;
+    font-size: 20pt;
+  }
+  .aside{
+    height: 540px;
+    width: 200px;
+    display: inline-block;
+  }
+  .aside p{
+    margin-top: 10px;
+  }
+    #button{
+      height: 35px;
+      width: 190px;
+      background-color: blue;
+      border-radius: 5px;
+      color: white;
+      font-size: 12pt;
+      margin-left: 5px;
+      margin-top: 15px;
+    }
+    #button2{
+      height: 35px;
+      width: 190px;
+      background-color: orange;
+      border-radius: 5px;
+      color: white;
+      font-size: 12pt;
+      margin-left: 5px;
+      margin-bottom: 15px;
+    }
+    .images{
+      background-image: url("./ad_background.png");
+      height: 300px;
+    }
+    .images p{
+      color: white;
+      text-align: center;
+      font-size: 20pt;
+      margin-bottom: 10px;
+    }
+    #img{
+      height: 120px;
+      width: 80px;
+      margin-left: 55px;
+    }
+    #button3{
+      height: 35px;
+      width: 180px;
+      background-color: cyan;
+      border-radius: 5px;
+      color: white;
+      font-size: 12pt;
+      margin-left: 10px;
+      margin-top: 16px;
+    }
+  .info{
+    height: 700px;
+    width: 760px;
+    display: inline-block;
+    vertical-align: top;
+  }
+    section{
+      height: 80px;
+      width: 760px;
+    }
+      section p{
+        display: inline-block;
+      }
+      #home{
+        height: 20px;
+        width: 220px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      #home img{
+        height: 15px;
+        width: 15px;
+        display: inline-block;
+      }
+      #phone{
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+        margin-left: 300px;
+      }
+      #phone img{
+        height: 40px;
+        width: 40px;
+        display: inline-block;
+        margin-left: 20px;
+      }
+      #contact{
+        height: 60px;
+        width: 135px;
+        display: inline-block;
+        padding-top: 15px;
+      }
+      #contact p{
+        font-size: 8pt;
+        display: block;
+        text-align: right;
+      }
+      #contact p:nth-child(2){
+        color: cyan;
+        font-size: 12pt;
+      }
+    h3{
+      color: #1E52C2;
+    }
+    main{
+      height: 460px;
+      width: 745px;
+      padding-left: 15px;
+    }
+      main img{
+        height: 80px;
+        width: 300px;
+        margin-left: 200px;
+      }
+  footer{
+    height: 130px;
+    width: 760px;
+    border-top: 4px solid #1E52C2;
+    border-right: 4px solid #1E52C2;
+    border-left: 4px solid #1E52C2;
+  }
+    footer img{
+      height: 110px;
+      width: 110px;
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    footer h3{
+      display: inline-block;
+    }
+    footer p{
+      display: inline-block;
+    }
+    #closing{
+      height: 110px;
+      width: 600px;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    #closing h3, p{
+      margin: 0px;
+    }
